@@ -1,0 +1,280 @@
+body {
+    margin:0;
+    font-family:'Roboto';
+    background: url('./background.png');
+    background-size: contain;
+}
+
+header {
+    text-align: center
+}
+input:focus{
+    outline: none;
+}
+.logo {
+    height: 220px;
+    width: 320px;
+    background-size: contain !important;
+    background-repeat: no-repeat !important;
+    background-position: center !important;
+    margin: 0 auto;
+}
+
+header .search {
+    font-size: 20px;
+    width: 80%;
+    margin: 0.5em auto;
+    padding: 0.5em 0;
+    border-radius: 10px 0 0 10px;
+    font-family: 'Overpass';
+}
+
+header .button {
+    font-size: 1.2em;
+    width: 5%;
+    margin: 0.5em auto;
+    padding: 0.5em 0;
+    border-radius: 0px 10px 10px 0px;
+    font-family: 'Overpass';
+    background: #585858;
+    outline: none;
+    cursor: pointer;
+}
+header .button:hover {
+    background: #909090;
+}
+
+.home_wrapper {
+    font-family: 'Rosario';
+    color: #f0eeed;
+    display: flex;
+    justify-content: center;
+    font-size: 3.2em;
+    flex-wrap: wrap;
+    padding-top: 1em;
+    text-align: center;
+    letter-spacing: 3px;
+    word-spacing: 5px;
+
+}
+.home_wrapper #bold {
+    font-family: 'Bungee';
+    font-size: 0.8em;
+    color: white;
+}
+.home_wrapper .top_title {
+    flex-basis: 100%;
+}
+.home_wrapper .bottom_title {
+    flex-basis: 100%;
+    padding-left: 4em;
+}
+.more_rec {
+    font-size: 1.2em;
+    width: 20%;
+    margin: 0.5em auto;
+    padding: 0.5em 0;
+    border-radius: 20px;
+    font-family: 'Overpass';
+    background: #3B478C;
+    outline: none;
+    cursor: pointer;
+    color: white;
+    text-transform: capitalize;
+}
+.result_wrap {
+    width: 90%;
+    display: flex;
+    flex-wrap: wrap;
+    margin: 1em auto;
+}
+.result_wrap .info {
+    flex-basis: 100%;
+    text-align: center;
+    font-family: Overpass;
+    color: #f0fffd;
+    font-size: 0.8em;
+}
+.result_wrap .result_header {
+    flex-basis: 100%;
+    color: #f0eeed;
+    font-family: Overpass;
+    font-size: 1.2em;
+    padding: 20px;
+}
+.result_item {
+    padding:20px;
+    box-sizing:border-box;
+    display: flex;
+    height: max-content !important;
+    flex-basis: 25%;
+}
+.result_item .img_left {
+    flex-basis: 50%;
+    border-radius: 20px 0px 0px 20px;
+    overflow: hidden;
+}
+.result_item .img_left .img {
+    background-repeat: no-repeat !important;
+    background-position: center !important;
+    background-size: cover !important;
+    width: 100%;
+    height: 100%;
+}
+.result_item .img_left .box {
+    width: 100%;
+    height: 15%
+}
+.result_item .desc_right {
+    flex-basis: 50%;
+    background-color: #FFED99;
+    border-radius: 0px 20px 20px 0px;
+    overflow: hidden;
+}
+.result_item .desc_right .name {
+    font-family: 'Overpass';
+    padding: 1em 0;
+    font-size: 1.2em;
+}
+.result_item .indgrident_wrap {
+    height: 60%
+}
+.result_item  .indgrident_ul {
+    max-height:100%;
+    margin:0;
+    overflow:auto;
+}
+.result_item .indgrident_ul li {
+    font-size: 0.9em
+}
+.MuiCardMedia-root-35 {
+    display: block;
+    background-size: 100% 100% !important;
+    background-repeat: no-repeat !important;
+    background-position: center !important;
+    height: 15em !important;
+}
+.MuiTypography-h5-54 {
+    color: rgba(0, 0, 0, 0.87);
+    font-weight: 400;
+    line-height: 1.33;
+    letter-spacing: 0em;
+    font-family: 'Overpass' !important;
+    font-size: 1.2em !important;
+}
+#healthLabel {
+    display: flex ;
+    flex-wrap: wrap;
+    justify-content: space-between;
+}
+hr.style4 {
+	border-top: 1px dotted #8c8b8b;
+}
+
+footer {
+    display: flex;
+    align-items: center;
+    justify-content: space-around;
+    color: #fff;
+    font-family: Overpass;
+}
+
+footer ul {
+    display: flex;
+    list-style-type: none;
+}
+
+footer ul li {
+    margin-left: 16px;
+}
+footer a {
+    text-decoration: none;
+    opacity: 0.75;
+    color: #fff;
+}
+footer a:hover {
+    opacity: 1;
+}
+footer ul li a span {
+     height: 1px;
+     width: 1px;
+     position: absolute;
+     overflow: hidden;
+     top: -10px;
+}
+footer p {
+    text-transform: uppercase;
+    font-size: 14px;
+    opacity: 0.6;
+    align-self: center;
+}
+
+@media (max-width: 600px) {
+    footer {
+        flex-direction: row;
+        flex-wrap: wrap;
+    }
+
+    footer p {
+        text-align: center;
+        flex-basis: 33.3%;
+        font-size: 12px;
+    }
+
+    footer ul {
+        padding: 0;
+        margin: 0;
+    }
+
+    footer ul li {
+        margin: 0 8px;
+    }
+}
+
+@media (max-width: 800px){
+    header .button {
+        width: 10%;
+    }
+    .home_wrapper {
+        text-align: left;
+    }
+    .home_wrapper .top_title {
+        padding-left: 2em;
+    }
+    .home_wrapper .bottom_title {
+        padding-left: 3em;
+    }
+    .more_rec {
+        width: 50%;
+    }
+    .result_wrap .info {
+        font-size: 1em;
+    }
+    .result_item {
+        flex-basis: 50%;
+    }
+}
+
+@media (max-width: 600px){
+    .home_wrapper {
+        font-size: 2em;
+        text-align: center;
+        width: 50%;
+        margin: 0.5em auto;
+    }
+    .home_wrapper .top_title {
+        padding-left: 0em;
+    }
+    .home_wrapper .bottom_title {
+        padding-left: 0;
+    }
+    .more_rec {
+        font-size: 1em;
+    }
+    .result_wrap .info {
+        font-size: 0.8em;
+    }
+    .result_item {
+        flex-basis: 100%;
+    }
+}
